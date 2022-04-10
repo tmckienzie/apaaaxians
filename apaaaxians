@@ -1,0 +1,19 @@
+using System;
+
+namespace Apaxians_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = Console.ReadLine();
+            string last = "";
+            for (int x = 0; x < name.Length - 1; x++)
+                if (name[x] != name[x + 1])
+                    last += name[x];
+            {
+                Console.WriteLine(last + name[name.Length - 1]);
+            }
+        }
+    }
+}
